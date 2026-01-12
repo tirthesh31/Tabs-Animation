@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
   function animateTabItems($panel) {
-    const $items = $panel.children('[fh-tab-item]');
+    const $items = $panel.find('*');
 
     // Reset state
     gsap.set($items, {
